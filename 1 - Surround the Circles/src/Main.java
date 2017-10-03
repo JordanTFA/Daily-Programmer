@@ -20,30 +20,87 @@ public class Main {
         double maxHeight = findMaxHeight(theCircles);
         double minHeight = findMinHeight(theCircles);
 
-        double maxWidth = findMaxWidth(theCircles);
-        double minWidth = findMinWidth(theCircles);
+        double rightWall = findRightWall(theCircles);
+        double leftWall = findLeftWall(theCircles);
+
+        System.out.println("\n" +
+                "(" + maxHeight + ", " + leftWall + ") - " + "(" + maxHeight + ", " + rightWall + ")\n" +
+                "(" + minHeight + ", " + leftWall + ") - " + "(" + minHeight + ", " + rightWall + ")"
+        );
     }
 
 
-    public static double findMaxHeight(ArrayList<Circle> theCircles){
+    public static double findMaxHeight(ArrayList<Circle> theCircles) {
 
-        return 0;
+        double highestSoFar = 0;
+
+        double top = 0;
+
+        for (int i = 0; i < theCircles.size(); i++) {
+
+            top = theCircles.get(i).getY() + theCircles.get(i).getR();
+
+            if(top > highestSoFar){
+                highestSoFar = top;
+            }
+        }
+
+        return highestSoFar;
     }
 
-    public static double findMinHeight(ArrayList<Circle> theCircles){
+    public static double findMinHeight(ArrayList<Circle> theCircles) {
 
-        return 0;
+        double lowestSoFar = 0;
+
+        double low = 0;
+
+        for (int i = 0; i < theCircles.size(); i++) {
+
+            low = theCircles.get(i).getY() - theCircles.get(i).getR();
+
+            if(low < lowestSoFar){
+                lowestSoFar = low;
+            }
+        }
+
+        return lowestSoFar;
     }
 
-    public static double findMaxWidth(ArrayList<Circle> theCircles){
+    public static double findRightWall(ArrayList<Circle> theCircles) {
 
-        return 0;
+        double furthestRightSoFar = 0;
+
+        double right = 0;
+
+        for (int i = 0; i < theCircles.size(); i++) {
+
+            right = theCircles.get(i).getX() + theCircles.get(i).getR();
+
+            if(right > furthestRightSoFar){
+                furthestRightSoFar = right;
+            }
+        }
+
+        return furthestRightSoFar;
     }
 
-    public static double findMinWidth(ArrayList<Circle> theCircles){
+    public static double findLeftWall(ArrayList<Circle> theCircles) {
 
-        return 0;
+        double furthestLeftSoFar = 0;
+
+        double left = 0;
+
+        for (int i = 0; i < theCircles.size(); i++) {
+
+            left = theCircles.get(i).getX() - theCircles.get(i).getR();
+
+            if(left < furthestLeftSoFar){
+                furthestLeftSoFar = left;
+            }
+        }
+
+        return furthestLeftSoFar;
     }
 
-    }
+}
 
