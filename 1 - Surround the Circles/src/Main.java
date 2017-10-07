@@ -2,10 +2,12 @@ import java.util.ArrayList;
 
 public class Main {
 
+    // The circles
     static ArrayList<Circle> theCircles = new ArrayList<Circle>();
 
     public static void main(String[] args) {
 
+        // the input
         double[][] circles = {
                 {1, 1, 2},
                 {2, 2, 0.5},
@@ -17,12 +19,15 @@ public class Main {
             theCircles.add(new Circle(circles[i][0], circles[i][1], circles[i][2]));
         }
 
+        // Find upper and lower vertical bounds
         double maxHeight = findMaxHeight(theCircles);
         double minHeight = findMinHeight(theCircles);
 
+        // Find upper and lower horizontal bounds
         double rightWall = findRightWall(theCircles);
         double leftWall = findLeftWall(theCircles);
 
+        // Display answer
         System.out.println("\n" +
                 "(" + maxHeight + ", " + leftWall + ") - " + "(" + maxHeight + ", " + rightWall + ")\n" +
                 "(" + minHeight + ", " + leftWall + ") - " + "(" + minHeight + ", " + rightWall + ")"
@@ -30,6 +35,7 @@ public class Main {
     }
 
 
+    // Upper vertical bound
     public static double findMaxHeight(ArrayList<Circle> theCircles) {
 
         double highestSoFar = 0;
@@ -48,6 +54,7 @@ public class Main {
         return highestSoFar;
     }
 
+    // Lower vertical bound
     public static double findMinHeight(ArrayList<Circle> theCircles) {
 
         double lowestSoFar = 0;
@@ -66,6 +73,7 @@ public class Main {
         return lowestSoFar;
     }
 
+    // Upper horizontal bound
     public static double findRightWall(ArrayList<Circle> theCircles) {
 
         double furthestRightSoFar = 0;
@@ -84,6 +92,7 @@ public class Main {
         return furthestRightSoFar;
     }
 
+    // Lower vertical bound
     public static double findLeftWall(ArrayList<Circle> theCircles) {
 
         double furthestLeftSoFar = 0;
