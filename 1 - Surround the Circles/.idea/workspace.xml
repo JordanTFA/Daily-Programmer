@@ -15,7 +15,7 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
+            <state relative-caret-position="436">
               <caret line="94" column="12" lean-forward="false" selection-start-line="94" selection-start-column="12" selection-end-line="94" selection-end-column="12" />
               <folding />
             </state>
@@ -81,10 +81,10 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
       <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -238,12 +238,13 @@
       <workItem from="1506979727831" duration="3390000" />
       <workItem from="1507065641846" duration="3265000" />
       <workItem from="1507416791529" duration="25000" />
-      <workItem from="1507416900423" duration="220000" />
+      <workItem from="1507416900423" duration="725000" />
+      <workItem from="1507502994984" duration="113000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8635000" />
+    <option name="totallyTimeSpent" value="9253000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -307,6 +308,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Circle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="13" lean-forward="false" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Circle.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -317,7 +334,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
+        <state relative-caret-position="436">
           <caret line="94" column="12" lean-forward="false" selection-start-line="94" selection-start-column="12" selection-end-line="94" selection-end-column="12" />
           <folding />
         </state>
